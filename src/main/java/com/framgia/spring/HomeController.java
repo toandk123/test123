@@ -36,4 +36,13 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/test")
+	public String test(Model model){
+		
+		String test = "MAVEN TEST";
+		model.addAttribute("serverTime", test );
+		
+		return "home";
+	}
+	
 }
